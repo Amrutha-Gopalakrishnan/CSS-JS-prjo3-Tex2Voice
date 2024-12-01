@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background:#00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.hero h1 span{
+    color: rgb(200, 255, 0);
+}
+
+#textbox{
+    width: 600px;
+    height: 250px;
+    background: #056085;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid white;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+    
+#textbox::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background: #010d16;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 35px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img{
+    width: 20px;
+    margin-right: 10px
+}
+
+select{
+    flex: 1;
+    background: #010d16;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 2px solid white;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(./5800629-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(98%);
+    background-position-y: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    #textbox {
+        height: 200px;
+        font-size: 18px;
+    }
+
+    .row {
+        gap: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    select {
+        height: 40px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    #textbox {
+        height: 150px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+}
+
